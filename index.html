@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MULTIPCATION TABLE</title>
+</head>
+<body>
+<script>
+    let sout, i, j, p;
+    sout = "<table border='1px' width='100%' style='text-align: justify-all; color: red'>";
+    i = 1;
+    j = 2;
+    while (i <= 10) {
+        sout = sout + "<tr>";
+        while (j <= 9) {
+            p = i * j;
+            sout = sout +"<td>" + j + " x " + i + " = " + p +"</td>";
+            j++;
+        }
+        sout = sout + "<tr>";
+        j=2
+        i++;
+    }
+
+    sout += "<table>";
+    document.write(sout);
+</script>
+</body>
+</html>
